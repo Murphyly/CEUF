@@ -16,8 +16,11 @@ export default class App extends Component {
   render() {
 
     return (
-
-      <EventList/>
+      <BrowserRouter>
+        <Switch>
+          <Route exact path="/" component={EventList} />
+        </Switch>
+      </BrowserRouter>
       
     );
   }
